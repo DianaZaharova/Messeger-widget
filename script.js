@@ -1,6 +1,6 @@
 
 function openWidget() {
-  const openMessages = document.querySelector('.widget-open');
+  const openMessages = document.querySelector('.widget-icon');
   openMessages.classList.add('active');
   createMessage()
 }
@@ -10,7 +10,7 @@ function closeWidget() {
   openMessages.classList.remove('active')
 }
 
-const widgetBtn = document.querySelector('.widget-btn');
+const widgetBtn = document.querySelector('.widget-icon');
 const widgetCloseBtn = document.querySelector('.widget-open__btn')
 
 widgetBtn.addEventListener('click', openWidget);
