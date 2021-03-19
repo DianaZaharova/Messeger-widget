@@ -1,12 +1,11 @@
+const openMessages = document.querySelector('.widget-open');
 
 function openWidget() {
-  const openMessages = document.querySelector('.widget-icon');
   openMessages.classList.add('active');
   createMessage()
 }
 
 function closeWidget() {
-  const openMessages = document.querySelector('.widget-open');
   openMessages.classList.remove('active')
 }
 
@@ -53,7 +52,7 @@ async function createMessage() {
       link.innerHTML = "Read more...";
       link.setAttribute('href', `${data[i].url}`);
 
-      const messageList = document.querySelector('.messenge-list')
+      const messageList = document.querySelector('.messange-list')
       messageList.append(item);
       item.append(title);
       item.append(author);

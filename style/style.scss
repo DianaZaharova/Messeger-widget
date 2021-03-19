@@ -112,15 +112,8 @@ body {
   }
 }
 
-.message-title,
-.message-author,
-.message-data,
-.message-link {
-  font-family: $font-lato;
-
-}
-
 .message-title {
+  font-family: $font-lato;
   font-weight: 700;
   color: #000;
   font-size: 20px;
@@ -130,6 +123,7 @@ body {
 }
 
 .message-author {
+  font-family: $font-lato;
   font-weight: 400;
   color: #000;
   font-size: 18px;
@@ -139,21 +133,23 @@ body {
 }
 
 .message-date {
+  font-family: $font-lato;
   text-transform: uppercase;
   font-weight: 400;
   color: #8083a3;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 0;
   padding-bottom: 12px;
   margin: 0;
 }
 
 .message-link {
+  font-family: $font-lato;
   margin: 0;
   font-weight: 400;
   color: #000;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 10px;
   transition: opacity $transition;
   width: fit-content;
