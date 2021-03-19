@@ -1,0 +1,207 @@
+body {
+  background-color: #b0c4de;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.widget-btn {
+  position: fixed;
+  bottom: 7%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/icon-message.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.widget-btn:hover {
+  background-image: url(../img/icon-message-hover.svg);
+}
+
+.widget-open {
+  display: none;
+  position: fixed;
+  width: 400px;
+  height: 600px;
+  top: 0;
+  right: 15px;
+  background-color: #eceef5;
+  padding: 20px;
+  overflow: auto;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 0 0 15px 15px;
+}
+
+.active {
+  display: block;
+}
+
+.widget-open__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.widget-open__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.widget-open__title::before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../img/newspaper.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.widget-open__btn {
+  background-image: url(../img/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.widget-open__btn:hover {
+  opacity: .6;
+}
+
+.messenge-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message-item {
+  border-width: 1px 0 0 0;
+  border-color: #000;
+  border-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message-item:last-child {
+  border-width: 1px 0 1px 0;
+}
+
+.message-title,
+.message-author,
+.message-data,
+.message-link {
+  font-family: "Lato", sans-serif;
+}
+
+.message-title {
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.message-author {
+  font-weight: 400;
+  color: #000;
+  font-size: 18px;
+  padding-top: 0;
+  padding-bottom: 2px;
+  margin: 0;
+}
+
+.message-date {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #8083a3;
+  font-size: 18px;
+  padding-top: 0;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+.message-link {
+  margin: 0;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  padding-bottom: 10px;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.message-link:hover {
+  opacity: .6;
+}
+
+.message-link:active {
+  opacity: .4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #737373;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #525252;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
