@@ -17,7 +17,7 @@ widgetCloseBtn.addEventListener('click', closeWidget)
 
 
 async function createMessage() {
-  let response = await fetch('https://api.mediastack.com/v1/news?access_key=4539ab47c8573484130c5d9941bead2d&countries=gb');
+  let response = await fetch('http://api.mediastack.com/v1/news?access_key=4539ab47c8573484130c5d9941bead2d&countries=gb');
 
   if (response.ok) {
     let json = await response.json();
